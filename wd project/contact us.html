@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        .main{
+             text-align: center;
+        }
+        .h1{
+            font-size: x-large;
+            font-weight: 900;
+            font-style: italic;
+            background: linear-gradient(to top,darkorange,white,green);
+            background-clip: text;
+            -webkit-text-fill-color:transparent;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            clear:both;
+        }
+        .h{
+            font-size: x-large;
+            font-weight: 900;
+            font-style: italic;
+            background: linear-gradient(to top,darkorange,white,green);
+            background-clip: text;
+            -webkit-text-fill-color:transparent;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .p{
+            font-size: large;
+            font-weight: 500;
+            font-family: cursive; 
+            color:blue;
+        }
+        .table{
+            font-size: large;
+            font-weight:500;
+            font-family:monospace;
+            color:white;
+            border: 1px solid white;
+            width:40%;
+            margin-left:500px;
+            background-color:black;
+        }
+        @keyframes borderGlow {
+  0% { border-color: red; box-shadow: 0 0 10px red; }
+  25% { border-color: orange; box-shadow: 0 0 15px orange; }
+  50% { border-color: yellow; box-shadow: 0 0 20px yellow; }
+  75% { border-color: lime; box-shadow: 0 0 15px lime; }
+  100% { border-color: cyan; box-shadow: 0 0 10px cyan; }
+}
+
+.table {
+  font-size: large;
+  font-weight: 500;
+  font-family: monospace;
+  color: white;
+  border: 4px solid white;
+  width: 40%;
+  margin-left: 500px;
+  background-color: black;
+  animation: borderGlow 2s infinite alternate; /* Apply animation */
+}
+
+        .h2{
+            text-align: center;
+            color: white;
+            margin-left:0px;
+            font-size: xx-large;
+        }
+        .fo a{
+            font-size: large;
+            font-weight:500;
+            font-family:cursive;
+            color:peru;
+            font-style: italic;
+            text-decoration: none;
+        }
+        .fo1{
+            font-size: large;
+            font-weight:500;
+            font-family:monospace;
+            font-style: italic;
+            color:firebrick;
+        }
+        .fo2{
+            font-size: large;
+            font-weight:500;
+            font-style: italic;
+            color:teal;
+        }
+        .main{
+           background-color: plum;
+           background-image: url(image2.avif);
+        }
+        .link1{
+             float:left;
+            margin-left:100px;
+            margin-top:35px;
+        }
+        .link2{
+            float:left;
+            margin-left:230px;
+            margin-top:35px;
+        }
+        .link3{
+            float: left;
+            margin-left:230px;
+            margin-top:35px;
+        }
+        .link4{
+            float: left;
+            margin-left:200px;
+            margin-top:35px;
+        }
+        .link5{
+            float: left;
+            margin-left: 200px;
+            margin-top:35px;
+        }
+        .link a{
+            float:left;
+            text-decoration: none;
+            color:teal;
+            font-size: large;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-style:italic;
+        }
+        .link{
+            background-color:chartreuse;
+            height:120px;
+            width: 100%;   
+        }
+        .h1::selection{
+            background-color:blueviolet;
+         }
+        .h1::first-letter{
+            color:red;
+            font-size:100px;
+         }
+        @keyframes crackerEffect {
+  0% { content: "✨"; opacity: 0; transform: scale(0.5) translateY(10px); }
+  50% { content: "🎇"; opacity: 1; transform: scale(1.2) translateY(-5px); }
+  100% { content: "🎆"; opacity: 0; transform: scale(0.5) translateY(10px); }
+}
+
+.cracker-link {
+  position: relative;
+  text-decoration: none;
+  color: teal;
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  transition: color 0.3s ease-in-out;
+}
+
+.cracker-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -15px;
+  transform: translateX(-50%);
+  font-size: 20px;
+  opacity: 0;
+}
+
+.cracker-link:hover {
+  color: darkred;
+}
+
+.cracker-link:hover::after {
+  animation: crackerEffect 1.5s infinite;
+}
+
+        @media (max-width:600px) {
+          .link{
+             display:block;
+             padding:20px;
+         }
+         .link1{
+             margin-top:-15px;
+             margin-left:100px;
+         }
+         .link2{
+             margin-left:-60px;
+             margin-top:10px;
+         }
+         .link3{
+             margin-top:10px;
+             margin-left:100px;
+         }
+         .link4{
+             margin-top:10px;
+             margin-left:100px;
+         }
+         .link5{
+             margin-top:10px;
+             margin-left:100px;
+         }
+         .main{
+             width:fit-content;
+         }    
+         .p{
+          font-size:10px;
+          font-family:monospace;
+          color:brown;
+         }
+         .h{
+            font-size:15px;
+            color:coral;
+            font-style:italic;
+            font-family: cursive;
+         }
+        }
+ 
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact us page</title>\
+    <div class="main">
+        <div class="link">
+            <a href="homepage.html" class="link1 cracker-link"><b>Home</b></a>
+            <a href="culture.html" class="link2 cracker-link"><b>Culture</b></a>
+            <a href="landmarks.html" class="link3 cracker-link"><b>Landmarks</b></a>
+            <a href="cuisine.html" class="link4 cracker-link"><b>Cuisine</b></a>
+            <a href="contact us.html" class="link5 cracker-link"><b>Contact us</b></a>
+          </div>          
+          
+</head>
+<body>
+    
+ <div class="h1">
+<h1>Contact Us</h1>
+</div>
+
+<div class="p">
+<p>Please fill out the form below for any inquiries or to register as a student.</p>
+</div>
+
+<div class="h2">
+<h2>Student Registration Form </h2>
+</div>
+
+<div class="table">
+<form>
+
+    <table cellpadding="10px"  >
+        <tr>
+            <td>
+            <label for="fname">First Name:</label>
+            <input id="fname" type="text"  required placeholder="Enter your First name"> 
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="password">Password:</label>
+               <input id="password" type="password" required>  
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="Gender">Gender:</label>
+                <input type="radio" name="Gender" id="Male"><label for="Male">Male</label>
+                <input type="radio" name="Gender" id="Female"><label for="Female">Female</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="News">Subscribe to Newsletter:</label>
+                <input type="checkbox" name="News" >
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="State">State:</label>
+                <select>
+                    <option disabled selected>Select your state</option>
+                    <option>Gujarat</option>
+                    <option>Andhra Pradesh</option>
+                    <option>Arunachal Pradesh</option>
+                    <option>Assam</option>
+                    <option>Bihar</option>
+                    <option>Chhattisgarh</option>
+                    <option>Goa</option>
+                    <option>Haryana</option>
+                    <option>Himachal Pradesh</option>
+                    <option>Jharkhand</option>
+                    <option>Karnataka</option>
+                    <option>Kerala</option>
+                    <option>Madhya Pradesh</option>
+                    <option>Maharashtra</option>
+                    <option>Manipur</option>
+                    <option>Meghalaya</option>
+                    <option>Mizoram</option>
+                    <option>Nagaland</option>
+                    <option>Odisha</option>
+                    <option>Punjab</option>
+                    <option>Rajasthan</option>
+                    <option>Sikkim</option>
+                    <option>Tamil Nadu</option>
+                    <option>Telangana</option>
+                    <option>Tripura</option>
+                    <option>Uttar Pradesh</option>
+                    <option>Uttarakhand</option>
+                    <option>West Bengal</option>
+                    <option>Andaman and Nicobar Islands</option>
+                    <option>Chandigarh</option>
+                    <option>Delhi</option>
+                    <option>Lakshadweep</option>
+                    <option>Puducherry</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="Resume">Upload Resume:</label>
+                <input type="file" id="Resume">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="address">Address:</label>
+                <textarea id="address" cols="40" rows="4" placeholder="Enter your full address"></textarea>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="Date">Date of Birth:</label>
+                <input type="date" id="Date">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="time">Preferred Interview Time:</label>
+                <input type="time" id="time">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="marks">Marks:</label>
+                <input type="number" id="marks" min="0" max="100">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </td>
+        </tr>
+    
+    </table>
+</form>
+</div>
+
+<div class="h">
+<h2>More Information</h2>
+</div>
+
+<div class="p">
+<p>Explore government job opportunities on the official OJAS website:</p>
+</div>
+<iframe src="https://ojas.gujarat.gov.in/" height="210" width="310" title="OJAS"></iframe>
+
+<footer>
+     <div class="fo">
+    <p> <a href="homepage.html"> <u>Back to Home</u></a></p>
+</div>
+
+     <div class="fo1">
+    <p><i>Contact us at  <a href="info@incredibleindia.com">info@incredibleindia.com</a></i></p>
+</div>
+
+   <div class="fo2">
+    <p> &#169 2025 Incredible India Project</p>
+</div>
+</footer>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    
+    pre{
+      font-family:cursive;
+      color:darkorchid;
+      font-size: large;
+      font-weight:500;
+    }
+    .h{
+      font-family:fantasy;
+      background: linear-gradient(to top,darkorange,white,green);
+      background-clip: text;
+      -webkit-text-fill-color:transparent;
+      font-size: x-large;
+      font-style:italic;
+      font-weight:900;
+    }
+    .h1{
+      font-family:fantasy;
+      color:purple;
+      font-size: x-large;
+      font-style:italic;
+      font-weight:900;
+    }
+    .p{
+      font-family:cursive;
+      color:red;
+      font-size:large;
+      font-style: oblique;
+      text-align: justify;
+      font-weight:500;
+    }
+    .ul{
+        font-family:'Courier New', Courier, monospace;
+        color:darkblue;
+        font-size: large;
+        font-weight:500;
+    }
+    .blaquo{
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color:cadetblue;
+      font-style: italic;
+      font-size:large;
+      font-weight:500;
+    }
+    .fo a{
+      font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      color:darkviolet;
+      font-size: large;
+      font-weight:500;
+      text-decoration: none;
+    }
+    .fo1{
+      font-family: cursive;
+      font-size: large;
+      color:darkgreen;
+      font-weight:500;
+    }
+    .fo2 a{
+      font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: large;
+      color:burlywood;
+      font-weight:500;
+      text-decoration: none;
+    }
+    .main{
+    background-color:grey;
+    }
+    .link1{
+      float:left;
+      margin-left:100px;
+      margin-top:35px;
+    }
+    .link2{
+      float:left;
+      margin-left:230px;
+      margin-top:35px;
+    }
+    .link3{
+      float:left;
+      margin-left:230px;
+      margin-top:35px;
+    }
+    .link4{
+      float:left;
+      margin-left:200px;
+      margin-top:35px;
+    }
+    .link5{
+      float:left;
+      margin-left: 200px;
+      margin-top:35px;
+    }
+    .link a{
+      float:left;
+      text-decoration: none;
+      color:mediumspringgreen;
+      font-size: large;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      font-style:italic;
+    }
+    .link{
+      background-color: brown;
+      height:100px;
+      width: 100%;
+    }
+    .img1{
+      box-shadow: 5px 5px 5px lightgoldenrodyellow;
+      transition:transform 1s;
+    }
+    .img1:hover{
+      transform:scale(2.0);
+    }
+    .img2{
+      transition:transform 1s;
+    }
+    .img2:hover{
+      transform: scale(-1.0);
+      transform: rotate(90deg);
+    }
+    .img3{
+      transition: transform 1s;
+    }
+    .img3:hover{
+      transform:rotate(-90deg);
+    }
+    .p::selection{
+        background-color:rgb(138, 170, 106);
+    }
+    .p::first-letter{
+        color:black;
+        font-size:50px;
+    }
+    .h::first-letter{
+      color:blue;
+      font-size:100px;
+    }
+
+    @keyframes fadeInSlide {
+           from {
+                opacity: 0;
+                transform: translateY(-20px);
+                }
+           to {
+                opacity: 1;
+                 transform: translateY(0);
+             }
+           }
+
+          .animated-text {
+              animation: fadeInSlide 2s ease-in-out;
+          }
+          @keyframes waveAnimation {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.wave-text span {
+  display: inline-block;
+  animation: waveAnimation 1.5s infinite ease-in-out;
+}
+
+.wave-text span:nth-child(1) { animation-delay: 0s; }
+.wave-text span:nth-child(2) { animation-delay: 0.1s; }
+.wave-text span:nth-child(3) { animation-delay: 0.2s; }
+.wave-text span:nth-child(4) { animation-delay: 0.3s; }
+.wave-text span:nth-child(5) { animation-delay: 0.4s; }
+.wave-text span:nth-child(6) { animation-delay: 0.5s; }
+.wave-text span:nth-child(7) { animation-delay: 0.6s; }
+.wave-text span:nth-child(8) { animation-delay: 0.7s; }
+.wave-text span:nth-child(9) { animation-delay: 0.8s; }
+.wave-text span:nth-child(10) { animation-delay: 0.9s; }
+.wave-text span:nth-child(11) { animation-delay: 1s; }
+
+    
+    @media (max-width:600px) {
+         .main{
+           background-color:aqua;
+           width:fit-content;
+         } 
+         .h{
+            font-size:15px;
+            color:aqua;
+            font-style:italic;
+            font-family: cursive;
+         }
+         .link{
+             display:block;
+             padding:20px;
+             width:93%;
+         }
+         .link1{
+             margin-left:100px;
+             margin-top:-10px;
+         }
+         .link2{
+             margin-top:15px;
+             margin-left:-60px;
+         }
+         .link3{
+             margin-top:40px;
+             margin-left:-75px;
+         }
+         .link4{
+             margin-top:65px;
+             margin-left:-110px;
+         }
+         .link5{
+            margin-top:90px;
+             margin-left:-110px;
+         }
+         .p{
+             font-size:10px;
+             font-family:monospace;
+         } 
+    }
+  </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+</head>
+<body>
+  <div class="main">
+    <h1 class="animated-text" class="h1">Welcome to <mark>Incredible India</mark></h1>
+    <p class="animated-text">Discover the diversity, beauty, and rich heritage of India!</p>
+    
+
+<div class="link">
+
+
+<a href="homepage.html"  class="link1" ><b>Home</b></a>
+
+<a href="culture.html" class="link2" ><b>Culture<b>
+
+<a href="landmarks.html" class="link3"><b>Landmarks</u>
+
+<a href="cuisine.html"  class="link4"><b>Cuisine</b></a>
+
+<a href="contact us.html"  class="link5"><b>Contact us</b></a>
+
+
+</div>
+<br> <br> <br>
+<h1 class="wave-text">
+  <span>A</span><span>b</span><span>o</span><span>u</span><span>t</span>
+  <span>I</span><span>n</span><span>d</span><span>i</span><span>a</span>
+</h1>
+
+
+<div class="p">
+<p>India is land of incredible diversity.From the snow-capped peaks of the Himalayas to the serene backwaters of kerala,every corner of India tells a unique story.India is the <strong>second-most populous country</strong> in the world and boasts a history spanning thousands of years.Its rich traditions have left an indelible mark on the world.</p>
+<br>
+
+</div>
+
+<div class="img1">
+
+  <pre><image src="india_map.jpg" height="500px" width="40%" alt="india_map"></image> </pre>
+</div>
+
+<div class="blaquo">
+<blockquote>India:A land of cultural and geographical diversity</blockquote>
+
+<blockquote>"Unity is diversity is not just a slogan in India but a way of life".</blockquote>
+
+Highlights of India include:
+</div>
+
+<div class="ul">
+<ul>
+<li>
+    <b>Architecture:</b>Majestic monuments like the taj Mahal and Red Fort.
+</li>
+
+<li>
+    <b>Cuisine:</b>Diverse flavors from spicy curries to sweet desserts.
+</li>
+
+<li>
+    <b>Culture</b>Vibrant festivals, classical dances, and colorful attire. 
+</li>
+</ul>
+</div>
+
+<div class="h">
+<h1>Famous Landmarks</h1>
+</div>
+<div class="p">
+<p>India is home to <mark>29 UNESCO world heritage sites</mark>, making it a paradise for history and architecture enthusiasts.</p>
+</div>
+
+<div class="img2">
+ <pre>1.           <image src="tajmahal.jpg" height="300px" width="25%" alt="tajmahal"> </br>              The Taj Mahal,a symbole of eternal love</br></image></pre>
+</div>
+
+<div class="img3">
+ <pre>2.           <image src="qutubminar.jpg" height="300px" width="25% " alt="qutubminar"> </br>              The Qutub Minar, an architectural marvel in Delhi</br></image></pre>
+</div>
+<div class="p">
+ <i>Don't miss exploring the intricate carvings, towering minarets, and breathtaking landscapes!</i>
+</div>
+<div class="h">
+ <h1>Indian Culture</h1>
+</div>
+
+<div class="p">
+ <p>India's <b>cultural heritage</b> is a blend of various traditions, languages, and religions. Each region has its unique identity and traditions that are celebrated through festivals and daily life. Here are some highlights:</p>
+</div>
+
+<div class="ul">
+ <ul>
+   <li><i>Classical Dances:</i> Bharatanatyam, Kathak, and Odissi.</li>
+
+   <li><i>Music:</i> Traditional instruments like the sitar, tabla, and veena.</li>
+
+   <li><i>Festivals:</i> Diwali, Holi, Eid, and Christmas bring people together in celebration.</li>
+ </ul>
+</div>
+<div class="img4">
+ <pre>          <image src="dance.jpg"  height="300px" width="25%" alt="dance" > <br>          A glimpse of Indian Classical Dance </br></image></pre>
+</div>
+ <div class="h">
+ <h1>Delicious Indian Cuisine</h1>
+</div>
+
+<div class="p">
+ <p>Indian food is as diverse as its culture. From the fiery curries of the south to the hearty bread of the north, there's something for everyone. Popular dishes include:</p>
+</div>
+
+<div class="ul">
+ <ul>
+   <li><b>north Indian:</b> Butter chicken, naan, and paneer tikka.</li>
+
+   <li><b>south Indian:</b> Dosa, idli, and sambhar.</li>
+
+   <li><b>Street Food:</b> Pani puri, chaat, and vada pav.</li>
+ </ul>
+</div>
+<div class="img5">
+ <pre>          <image src="biryani.jpg"  height="300px" width="25%" alt="biryani"> <br>          Delicious Hydraberabadi Biryani</br></image></pre>
+</div>
+<div class="img6">
+ <pre>          <image src="street_food.jpg"  height="300px" width="25%" alt="street_food"> <br>          Colorful and flavorful Indian street food</br></image></pre>
+</div>
+ <footer>
+    <div class="fo">
+    <p><i>Contact us at <a href="info@incredibleindia.com">info@incredibleindia.com</a></i></p>
+  </div>
+  <div class="fo1">
+    <p> &#169 2025 Incredible India Project. All rights reserved.</p>
+  </div>
+
+  <div class="fo2">
+    <p>Follow us on: <a href="www.facebook.com">Facebook</a> | <a href="www.twitter.com">Twitter</a></p>
+  </div>
+ </footer>
+ </div>
+</body>
+</html>

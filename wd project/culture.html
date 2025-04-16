@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        .h1{
+          font-size: x-large;
+          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+          font-style: italic;
+          background: linear-gradient(to top,rgb(19, 18, 18),rgb(175, 170, 170),rgb(217, 55, 55));
+          background-clip: text;
+          -webkit-text-fill-color:transparent;
+          font-weight:900;
+        }
+        .h{
+          font-size: x-large;
+          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+          font-style: italic;
+          background: linear-gradient(to top,rgb(19, 18, 18),rgb(175, 170, 170),rgb(217, 55, 55));
+          background-clip: text;
+          -webkit-text-fill-color:transparent;
+          font-weight:900;
+        }
+        .p{
+          font-size: large;
+          font-family: cursive;
+          color:indianred;
+          font-weight: 500;
+        }
+        pre{
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          font-size: large;
+          color:blueviolet;
+          font-weight: 500;
+        }
+        .ul{
+          font-weight: 500;
+          color:rgb(17, 130, 0);
+          font-family:cursive;
+          font-size: large;
+        }
+        .fo a{
+          font-weight: 500;
+          font-size: large;
+          color: darkorange;
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          font-style: italic;
+          text-decoration: none;
+        }
+        .fo1 {
+          font-weight: 500;
+          font-size: large;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          color: darkorange;
+          font-style: italic;
+          
+        }
+        .fo2{
+          color:orchid;
+          font-weight: 500;
+          font-size: large;
+          font-style: italic;
+          font-family: cursive;
+        }
+        .table{
+          font-size: large;
+          font-style: italic;
+          font-family: cursive;
+          font-weight: 500;
+          color:red;
+        }
+        .main{
+            background-color: navajowhite;
+            background-image: url(wd1.webp);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-size: cover;
+           
+        }
+        .link1{
+             float:left;
+             margin-left:100px;
+             margin-top:45px;
+        }
+        .link2{
+             float:left;
+             margin-left:230px;
+             margin-top:45px;
+        }
+        .link3{
+             float:left;
+             margin-left:230px;
+             margin-top:45px;
+        }
+        .link4{
+             float:left;
+             margin-left:200px;
+             margin-top:45px;
+        }
+        .link5{
+             float:left;
+             margin-left: 200px;
+             margin-top:45px;
+        }
+        .link a{
+             float:left;
+             text-decoration: none;
+             color:teal;
+             font-size: large;
+             font-family:Verdana, Geneva, Tahoma, sans-serif;
+             font-style:italic;
+        }
+        .link{
+            background-color:lightblue;
+            height:110px;
+            width: 100%;
+        }
+        .link a {
+            position: relative;
+            text-decoration: none;
+            color: teal;
+             font-size: large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-style: italic;
+            transition: color 0.3s ease-in-out;
+            }
+
+            .link a::after {
+            content: "";
+             position: absolute;
+             left: 0;
+             bottom: -3px;
+             width: 0;
+             height: 2px;
+             background-color: teal;
+             transition: width 0.3s ease-in-out;
+           }
+           .link a:hover {
+             color: darkblue;
+           }
+         .link a:hover::after {
+            width: 100%;
+          }
+          @keyframes crackerBlast {
+  0% { opacity: 0; transform: scale(0.5) translateY(10px); }
+  50% { opacity: 1; transform: scale(1.2) translateY(-5px); }
+  100% { opacity: 0; transform: scale(0.5) translateY(10px); }
+}
+
+.cracker-container {
+  position: relative;
+  display: inline-block;
+}
+
+.cracker-effect::before,
+.cracker-effect::after {
+  content: "🎆🎇✨";
+  position: absolute;
+  font-size: 30px;
+  opacity: 0;
+}
+
+.cracker-effect::before {
+  top: -30px;
+  left: 10px;
+  animation: crackerBlast 0.8s linear infinite;
+}
+
+.cracker-effect::after {
+  bottom: -30px;
+  right: 10px;
+  animation: crackerBlast 0.8s linear infinite 0.4s;
+}
+
+.cracker-hover {
+  transition: transform 0.3s ease-in-out;
+}
+
+.cracker-hover:hover {
+  transform: scale(1.1);
+}
+
+.cracker-hover:hover + .cracker-effect::before,
+.cracker-hover:hover + .cracker-effect::after {
+  opacity: 1;
+}
+
+.h::selection{
+        background-color:rgb(138, 170, 106);
+    }
+    .h::first-letter{
+        color:powderblue;
+        font-size:70px;
+    }
+
+        @media (max-width:600px) {
+          .link{
+             display:block;
+             padding:20px;
+         }
+         .link1{
+             margin-top:-15px;
+             margin-left:100px;
+         }
+         .link2{
+             margin-left:-60px;
+             margin-top:10px;
+         }
+         .link3{
+             margin-top:10px;
+             margin-left:100px;
+         }
+         .link4{
+             margin-top:10px;
+             margin-left:100px;
+         }
+         .link5{
+             margin-top:10px;
+             margin-left:100px;
+         }
+         .main{
+             width:fit-content;
+         }    
+         .p{
+          font-size:10px;
+          font-family:monospace;
+          color:brown;
+         }
+         .h{
+            font-size:15px;
+            color:coral;
+            font-style:italic;
+            font-family: cursive;
+         }
+        }
+      </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>culture page</title>
+    <div class="main">
+      <div class="link">
+        <a href="homepage.html" class="link1"><b>Home</b></a>
+        <a href="culture.html" class="link2"><b>Culture</b></a>
+        <a href="landmarks.html" class="link3"><b>Landmarks</b></a>
+        <a href="cuisine.html" class="link4"><b>Cuisine</b></a>
+        <a href="contact us.html" class="link5"><b>Contact us</b></a>
+      </div>
+      
+</head>
+<body>
+  <div class="h1" class="h2">
+<h1>Indian Culture</h1>
+</div>
+<div class="p">
+<p>Discover the rich and diverse culture of India, a land of unity in diversity.</p>
+</div>
+
+<div class="h">
+<h2>Festivals</h2>
+</div>
+
+<div class="p">
+<p>India celebrates a variety of festivals that reflect its rich cultural heritage and religions diversity:</p>
+</div>
+
+<div class="ul">
+<ul>
+<li><mark><b>Diwali:</b></mark> Festival of Lights, symbolizing the victory of light over darkness.</li>
+
+<li><b>Holi:</b> Festival of Colors, celebrating love and the arrival of spring.</li>
+
+<li><b>Eid:</b> Festival of Harmony, marked by prayers, feasts, and charity.</li>
+
+<li><b>Christmas:</b> Festival of Joy, celebrating the birth of Jesus Christ. </li>
+</ul>
+</div>
+<div class="cracker-container">
+  <pre>
+    <image src="diwali.jpg" height="250px" width="80%" alt="diwali" class="cracker-hover">
+    <br>Diwali - The Festival of Lights</br>
+    </image>
+    <span class="cracker-effect"></span>
+  </pre>
+</div>
+<div class="h">
+<h2>Languages</h2>
+</div>
+
+<div class="p">
+<p>India is a linguistic treasure trove with 22 officially recognized languages and thousands of regional dialects:</p>
+</div>
+
+<div class="table">
+<table border="1" solid black cellpadding="5" cellspacing="1">
+
+  <b align="center" colspan="2">Popular Languages in India</b> 
+
+  <tr>
+    <th>Language</th>
+    <th>Region</th>
+  </tr>
+
+  <tr>
+    <td>Hindi</td>
+    <td>North Indian</td>
+  </tr>
+
+  <tr>
+    <td>Bengali</td>
+    <td>West Bengal</td>
+  </tr>
+
+  <tr>
+    <td>Tamil</td>
+    <td>Tamil Nadu</td>
+  </tr>
+
+  <tr>
+    <td>Telugu</td>
+    <td>Andra Pradesh</td>
+  </tr>
+</table>
+&#9654; Fun Fact
+</div>
+
+<div class="h">
+<h2>Traditional Attire</h2>
+</div>
+
+<div class="p">
+<p>Indian Traditional clothing varies by region, showcasing its cultural diversity:</p>
+</div>
+
+<div class="ul">
+<ul>
+
+  <li><b>Saree:</b> Elegant drape worn by women across India.</li>
+
+  <li><b>Kurta-Pajama:</b> Comfortable attire for men, popular in the north. </li>
+
+  <li><b>Lehenga:</b> A festive outfit for women, especially in weddings.</li>
+
+  <li><b>Dhoti:</b> Traditional men's wear in southern and eastern India.</li>
+</ul>
+</div>
+
+<pre>          <image src="Saree.jpg"  height="250px" width="25%" alt="Saree"> <br>          Traditional saree - Grace and Elegance</br></image></pre>
+
+
+<footer>
+    <div class="fo">
+  <p><a href="homepage.html"><u>&larr;Back to Home</u></a></p>
+</div>
+
+<div class="fo1">
+  <p><i>Contact us at  <a href="info@incredibleindia.com">info@incredibleindia.com</a></i></p>
+</div>
+
+<div class="fo2">
+  <p> &#169 2025 Incredible India Project</p>
+</div>
+</footer>
+</div>
+</body>
+
+</html>
